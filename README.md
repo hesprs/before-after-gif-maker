@@ -1,4 +1,4 @@
-# SideProject-2022-Python-GIFMaker  
+# Python Before / After GIF Generator
 
 ## 1. Preparation  
 You have two before/after images with the same size.
