@@ -13,9 +13,9 @@ Before running the `main.py`, you can adjust the following parameters:
 ```
 --frame_dir   : the folder of being generated essential frames
 --resize_scale: if the image is too large, you can consider to resize 
---step        : the number of pixels progressed each frame (how fast your gif plays, higher is faster)
---type:       : png or jpg or others
---period      : gif duration in seconds (GIF players seem to ignore this)
+--fps         : Frames per second (smoothness, players often have have a cap, if FPS is higher than 30, it will be capped at 30)
+--type        : png or jpg or others
+--duration    : gif duration in seconds
 --repeat_GIF  : 0: repeat, 1: no repeat
 --result_dir  : path of result gif 
 ```
