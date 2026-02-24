@@ -1,0 +1,17 @@
+[project]
+name = "before-after-gif-maker"
+version = "0.1.0"
+description = "Generate a before-after gif from two images"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pillow",
+    "argparse",
+    "numpy",
+    "natsort",
+    "opencv-python-headless",
+    "tqdm",
+]
+
+[tool.uv]
+package = false

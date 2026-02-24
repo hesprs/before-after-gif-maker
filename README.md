@@ -5,20 +5,38 @@ You have two before/after images with the same size.
 
 ## 2. Run  
 Place the restored image and noised image into specific folder, respectively.
-Before running the `gif_maker.py`, you can adjust the following parameters:
+
+Supports batch generation, place image pairs with same name into `before` and `after` folder.
+
+Before running the `main.py`, you can adjust the following parameters:
 
 ```
 --frame_dir   : the folder of being generated essential frames
---resize_scale: if image is too larger, you can consider to resize 
---step        : each frame with [step] pixels
+--resize_scale: if the image is too large, you can consider to resize 
+--step        : the number of pixels progressed each frame (how fast your gif plays, higher is faster)
 --type:       : png or jpg or others
---frequency   : spending seconds in single loop
+--period      : gif duration in seconds (GIF players seem to ignore this)
 --repeat_GIF  : 0: repeat, 1: no repeat
 --result_dir  : path of result gif 
 ```
 
+## 3. Usage
 
-## 3. Final examples  
+Firstly install uv.
+
+Install dependencies:
+
+```sh
+uv sync
+```
+
+Run:
+
+```sh
+uv run main.py
+```
+
+## 4. Final examples  
 
 <details>  
 <summary>Restoration (visual result)</summary>  
